@@ -6,3 +6,11 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
+print("Welcome to Zach's tip calculator!")
+total_bill = float(input("What was the total bill? ($)\n"))
+tip_percent = float(input("What percent would you like to tip?\n"))
+people_paying = int(input("How many people are splitting the bill?\n"))
+bill_and_tip = total_bill * (1 + tip_percent / 100)
+rounded_bill = round(total_bill, 2)
+bill_per_person = round(bill_and_tip / people_paying, 2)
+print(f"Each person should pay ${bill_per_person}")
